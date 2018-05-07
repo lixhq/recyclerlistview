@@ -32,13 +32,13 @@ export default class ViewRenderer extends BaseViewRenderer<any> {
     public render(): JSX.Element {
         const style: CSSProperties = this.props.forceNonDeterministicRendering
             ? {
-                x: this.props.x,
-                y: this.props.y,
+                left: this.props.x,
+                top: this.props.y,
                 ...styles.baseViewStyle,
             }
             : {
-                x: this.props.x,
-                y: this.props.y,
+                left: this.props.x,
+                top: this.props.y,
                 height: this.props.height,
                 overflow: "hidden",
                 width: this.props.width,
